@@ -28,7 +28,7 @@
         <textarea type="text" name="input" class="form-control" rows="5"></textarea>
         <div class="row" style="margin-top:5px">
           <div class="col">
-            <h3><span class="badge bg-secondary badgefont"><b>Find & Replace</b></span></h3><h5><tt>(Case-sensitive)</tt></h5>
+            <h3><span class="badge bg-secondary badgefont"><b>Find & Replace</b></span></h3><h5><tt>(Case-sensitive)</tt></h>
             <input name="fnds" type="text" class="form-control w-100" placeholder="Find what?">
             <input name="rpls" class="form-control w-100" style="margin-top:5px" placeholder="Replace with?">
           </div>
@@ -41,7 +41,7 @@
         <input name="submit" type="submit" class = "btn btn-lg btn-primary w-100" style="margin-top:5px; border-radius:0px">
         
     </form>
-  </nav><br><br><br><br><br><br><br><br><br><br><br><br>
+  </nav><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
   <div class="container mt-5">
     <div class="mt-4 p-3 bg-dark text-white rounded">
