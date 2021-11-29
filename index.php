@@ -41,7 +41,7 @@
         <input name="submit" type="submit" class = "btn btn-lg btn-primary w-100" style="margin-top:5px; border-radius:0px">
         
     </form>
-  </nav><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  </nav><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
   <div class="container mt-5">
     <div class="mt-4 p-3 bg-dark text-white rounded">
