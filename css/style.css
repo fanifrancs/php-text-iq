@@ -1,0 +1,68 @@
+.tcolor{
+    color: orange;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.tcolorii{
+    color: black;
+    font-weight: bold;
+}
+
+.badgefont{
+    font-weight: 200 !important;
+}
+
+.font{
+    font-family: Georgia;
+}
+
+.margin{
+    margin-top: 5px !important;
+}
+
+.radius{
+    border-radius: 0px !important;
+    border: none !important;
+}
+
+.size{
+    font-size: 30px;
+}
+
+.hidden{
+    display : none;
+}
+
+.hidden-btn{
+    display : none;
+}
+
+.link{
+    text-decoration: none;
+}
+
+.foot{
+    font-size: medium !important;
+}
+
+.width{
+    width: 100% !important;
+    height: 50px !important;
+}
+
+.form-control{
+    border-radius: 0px !important;
+}
+
+.nbord{
+    border: none !important;
+}
+
+.nkeystr{
+    font-size: larger;
+}
+
+.inputdim{
+    height: 50px !important;
+}
