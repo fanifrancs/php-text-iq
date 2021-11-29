@@ -28,12 +28,12 @@
         <textarea type="text" name="input" class="form-control" rows="5"></textarea>
         <div class="row" style="margin-top:5px">
           <div class="col">
-            <h3><span class="badge bg-secondary badgefont"><b>Find & Replace</b></span></h3><h5><tt>(Case-sensitive)</tt></h5>
+            <h3><span class="badge bg-secondary badgefont"><b>Find & Replace</b></span></h3><h6><tt>(Case-sensitive)</tt></h6>
             <input name="fnds" type="text" class="form-control w-100" placeholder="Find what?">
             <input name="rpls" class="form-control w-100" style="margin-top:5px" placeholder="Replace with?">
           </div>
           <div class="col">
-            <h3><span class="badge bg-secondary badgefont"><b>Find & Replace</b></span></h3><h5><tt>(Case-insensitive)</tt></h5>
+            <h3><span class="badge bg-secondary badgefont"><b>Find & Replace</b></span></h3><h6><tt>(Case-insensitive)</tt></h6>
             <input name="fnd" type="text" class="form-control w-100" placeholder="Find what?">
             <input name="rpl" type="text" class="form-control w-100" style="margin-top:5px;" placeholder="Replace with?">
           </div>
@@ -102,7 +102,7 @@
 
   <div class="container mt-3">
     <div class="mt-1 p-3 bg-dark text-white rounded">
-      <h3><span class="badge bg-secondary badgefont"><b>Find & Replace</b></span><h5><tt>(Case-sensitive)</tt></h5></h3>
+      <h3><span class="badge bg-secondary badgefont"><b>Find & Replace</b></span><h6><tt>(Case-sensitive)</tt></h6>
       <textarea disabled class="form-control nbord" id="fp" rows="5" placeholder="Result will appear here.">
       <?php
       $fnds = $_GET['fnds'];
@@ -115,7 +115,7 @@
 
   <div class="container mt-3">
     <div class="mt-1 p-3 bg-dark text-white rounded">
-      <h3><span class="badge bg-secondary badgefont"><b>Find & Replace</b></span><h5><tt>(Case-insensitive)</tt></h5>
+      <h3><span class="badge bg-secondary badgefont"><b>Find & Replace</b></span><h6><tt>(Case-insensitive)</tt></h6>
       <textarea disabled class="form-control nbord" rows="5" placeholder="Result will appear here.">
       <?php
       $fnd = $_GET['fnd'];
