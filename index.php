@@ -24,8 +24,8 @@
     <div class="container">
       <a class="navbar-brand" href="#"> <span class="tcolorii">Text</span> <span class="tcolor">IQ</span><span class="text-muted"> •PHP</span></a>
     </div><br>
-    <form action="./index.php" method="get" class="container">
-        <textarea type="text" name="input" class="form-control" rows="5"></textarea>
+    <form action="./index.php" method="POST" class="container">
+        <textarea type="text" name="input" class="form-control" rows="5" placeholder="paste/enter input here"></textarea>
         <div class="row" style="margin-top:5px">
           <div class="col">
             <h3><span class="badge bg-secondary badgefont"><b>Find & Replace</b></span></h3><h6><tt>(Case-sensitive)</tt></h6>
@@ -48,7 +48,7 @@
       <h3><span class="badge bg-secondary badgefont"><b># of Keystrokes</b></span></h3>
       <p style="font-size:50px">
       <?php
-        define("input", $_GET['input']);
+        define("input", $_POST['input']);
         echo iconv_strlen(input);
       ?>
       </p>
@@ -105,8 +105,8 @@
       <h3><span class="badge bg-secondary badgefont"><b>Find & Replace</b></span><h6><tt>(Case-sensitive)</tt></h6>
       <textarea disabled class="form-control nbord" id="fp" rows="5" placeholder="Result will appear here.">
       <?php
-      $fnds = $_GET['fnds'];
-      $rpls = $_GET['rpls'];
+      $fnds = $_POST['fnds'];
+      $rpls = $_POST['rpls'];
       echo str_replace($fnds, $rpls, input);
       ?>
       </textarea>
@@ -118,8 +118,8 @@
       <h3><span class="badge bg-secondary badgefont"><b>Find & Replace</b></span><h6><tt>(Case-insensitive)</tt></h6>
       <textarea disabled class="form-control nbord" rows="5" placeholder="Result will appear here.">
       <?php
-      $fnd = $_GET['fnd'];
-      $rpl = $_GET['rpl'];
+      $fnd = $_POST['fnd'];
+      $rpl = $_POST['rpl'];
       echo str_ireplace($fnd, $rpl, input);
       ?>
       </textarea>
@@ -129,7 +129,7 @@
   <div class="container">
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
       <div class="col-md-4 d-flex align-items-center">
-        <span class="text-muted">&copy; 2021 <a class="navbar-brand" href="#"> <span class="tcolorii">Text</span> <span
+        <span class="text-muted">© 2021 <a class="navbar-brand" href="#"> <span class="tcolorii">Text</span> <span
               class="tcolor">IQ</span></a></span>
       </div>
 
@@ -140,47 +140,11 @@
       </ul>
 
       <div class="col-md-4 d-flex align-items-center">
-        <button class="btn btn-sm btn-dark"><a class="text-light link" data-bs-toggle="modal" data-bs-target="#myModal"
+        <button class="btn btn-sm btn-dark"><a class="text-light link" data-bs-toggle="modal" data-bs-tarPOST="#myModal"
             href="./feedback.php">Submit Feedback</a>
           </button>
       </div>
     </footer>
-  </div>
-
-  </div>
-  <div class="modal" id="myModal">
-    <div class="modal-dialog">
-      <div class="modal-content">
-
-        <div class="modal-header">
-          <h4 class="modal-title">Feedback form</h4>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>
-
-        <div class="modal-body container">
-          <h5>Send us a message</h5>
-          <form method="POST" action="https://formspree.io/f/mbjqeopd">
-            <input name="app-name" class="w-100 hidden" type="text" value="Text IQ"><br>
-            <label for="name">Name</label>
-            <input name="name" type="text" class="form-control" id="name" required><br>
-            <label for="email">Email</label>
-            <input name="email" type="email" class="form-control" id="email" required><br>
-            <label for="subject">Subject</label>
-            <input name="subject" type="text" class="form-control" id="subject" required><br>
-            <label for="message">Message</label>
-            <textarea name="message" id="message" class="form-control" cols="30" rows="5" required></textarea><br>
-            <label for="range">Rate this app</label>
-            <input name="rate" type="range" class="w-100 form-control" id="range" max="10" min="0" value="0"><br>
-            <button name="submit" class="w-100 btn btn-lg btn-dark" type="submit" id="submit"><span>Submit<span></button>
-          </form>
-        </div>
-
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-        </div>
-
-      </div>
-    </div>
   </div>
 
 </body>
